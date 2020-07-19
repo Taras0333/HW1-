@@ -39,6 +39,9 @@ console.log(profit);
 //advanced
 let container=document.querySelector("#container");
 container.innerHTML=`
+<p>Чашки ціна: ${cups};</p>
+<p>Тарілки ціна: ${plates};</p>
+<p>Ложки ціна: ${spoons};</p>
 <p>Найвища ціна: ${maxPrice};</p>
 <p>Найнижча ціна: ${minPrice};</p>
 <p>Сума товарів: ${allItems};</p>
