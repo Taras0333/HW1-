@@ -34,7 +34,7 @@ let specialPrice = (allItems - discount);
 console.log(specialPrice);
 let pricePerMade = (allItems / 2);
 console.log(pricePerMade);
-let profit = (pricePerMade - randomPrice);
+let profit = (pricePerMade - discount);
 console.log(profit);
 //advanced
 let container=document.querySelector("#container");
