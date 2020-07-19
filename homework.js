@@ -27,14 +27,14 @@ let moneyAfterPay = (pay - allItems);
 console.log(moneyAfterPay);
 let midPrice = ((cups + plates + spoons)/3).toFixed(2);
 console.log(midPrice);
-let randomPrice = (Math.random() * 100);
+let randomPrice = (Math.random() * 10);
 console.log(randomPrice);
 let discount = (allItems * randomPrice/100).toFixed(2);
 let specialPrice = (allItems - discount);
 console.log(specialPrice);
 let pricePerMade = (allItems / 2);
 console.log(pricePerMade);
-let profit = (pricePerMade - specialPrice);
+let profit = (pricePerMade - randomPrice);
 console.log(profit);
 //advanced
 let container=document.querySelector("#container");
