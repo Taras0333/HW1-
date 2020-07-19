@@ -27,7 +27,7 @@ let moneyAfterPay = (pay - allItems);
 console.log(moneyAfterPay);
 let midPrice = ((cups + plates + spoons)/3).toFixed(2);
 console.log(midPrice);
-let randomPrice = (Math.random() * 10);
+let randomPrice = (Math.random() * 100);
 console.log(randomPrice);
 let discount = (allItems * randomPrice/100).toFixed(2);
 let specialPrice = (allItems - discount);
