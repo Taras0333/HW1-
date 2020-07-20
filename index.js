@@ -15,11 +15,11 @@ console.log(priceOfAllItemsRounded);
 let sumToHundreds=Math.round((cups + plates + spoons)/100)*100;
 console.log(sumToHundreds);
 let isPriceRoundedToPair = true;
-if (true) {
-  let massage = ('Правда');
+if (isPriceRoundedToPair === true) {
+  let massage = ('True');
   console.log(massage);
 } else {
-  let massage = ('Не правда');
+  let massage = ('False');
   console.log(massage);
 }
 let pay = 500;
