@@ -1,40 +1,35 @@
-let cups = 15.678;
-let plates = 123.965;
-let spoons = 90.2345;
-console.log(cups);
-console.log(plates);
-console.log(spoons);
-let maxPrice = (Math.max(cups, plates, spoons));
-let minPrice = (Math.min(cups, plates, spoons));
-let allItems = (cups + plates + spoons);
+const cups = 15.678;
+const plates = 123.965;
+const spoons = 90.2345;
+const maxPrice = (Math.max(cups, plates, spoons));
+const minPrice = (Math.min(cups, plates, spoons));
+const allItems = (cups + plates + spoons);
 console.log(allItems);
-let allItemsWithoutCents = (Math.floor(cups) + Math.floor(plates) + Math.floor(spoons));
+const allItemsWithoutCents = (Math.floor(cups) + Math.floor(plates) + Math.floor(spoons));
 console.log(allItemsWithoutCents);
-let priceOfAllItemsRounded = (Math.floor(allItemsWithoutCents));
+const priceOfAllItemsRounded = (Math.floor(allItemsWithoutCents));
 console.log(priceOfAllItemsRounded);
-let sumToHundreds=Math.round((cups + plates + spoons)/100)*100;
+const sumToHundreds=Math.round((cups + plates + spoons)/100)*100;
 console.log(sumToHundreds);
-let isPriceRoundedToPair = true;
-if (isPriceRoundedToPair === true) {
-  let massage = ('True');
-  console.log(massage);
-} else {
-  let massage = ('False');
-  console.log(massage);
+let massage = 'False';
+if (priceOfAllItemsRounded % 2 == 0) {
+  massage = ('True');
 }
-let pay = 500;
-let moneyAfterPay = (pay - allItems);
+ console.log(massage);
+
+const pay = 500;
+const moneyAfterPay = (pay - allItems);
 console.log(moneyAfterPay);
-let midPrice = ((cups + plates + spoons)/3).toFixed(2);
+const midPrice = ((cups + plates + spoons)/3).toFixed(2);
 console.log(midPrice);
-let randomPrice = (Math.random() * 10);
+const randomPrice = (Math.random() * 10);
 console.log(randomPrice);
-let discount = (allItems * randomPrice/100).toFixed(2);
-let specialPrice = (allItems - discount);
+const discount = (allItems * randomPrice/100).toFixed(2);
+const specialPrice = (allItems - discount);
 console.log(specialPrice);
-let pricePerMade = (allItems / 2);
+const pricePerMade = (allItems / 2);
 console.log(pricePerMade);
-let profit = (pricePerMade - discount);
+const profit = (pricePerMade - discount);
 console.log(profit);
 //advanced
 let container=document.querySelector("#container");
@@ -47,7 +42,7 @@ container.innerHTML=`
 <p>Сума товарів: ${allItems};</p>
 <p>Сума товарів товарів без копійок: ${allItemsWithoutCents};</p>
 <p>Сума округлена до сотень: ${sumToHundreds};</p>
-<p>Парне/непарне число: ${isPriceRoundedToPair};</p>
+<p>Парне/непарне число: ${massage};</p>
 <p>Решта: ${moneyAfterPay};</p>
 <p>Середнє значення цін: ${midPrice};</p>
 <p>Дисконт: ${discount}; </p>
